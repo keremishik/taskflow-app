@@ -6,7 +6,18 @@ import { Task } from '../../services/task';
   imports: [],
   templateUrl: './task-board.html',
   encapsulation: ViewEncapsulation.None,
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  styles: `
+    .task-board-content{
+      display: flex;
+      gap: 10rem;
+      justify-content: center; /* horizontal center */
+      align-items: center; /* vertical center */
+    }
+    .task-board-column{
+      
+    }
+  `
 })
 export class TaskBoard {
   
