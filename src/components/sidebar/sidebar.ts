@@ -5,7 +5,13 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/
   imports: [],
   templateUrl: './sidebar.html',
   encapsulation: ViewEncapsulation.None,
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  styles: `
+    .sidebar-content{
+      text-align: center; /* yazilari yatayda ortalar */
+      
+    }
+  `
 })
 export class Sidebar {
 
