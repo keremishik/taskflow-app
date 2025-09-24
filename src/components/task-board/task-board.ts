@@ -19,6 +19,9 @@ import { Task } from '../../services/task';
       border-radius: 0.5rem;
       width: 350px; /* columns width */
     }
+    .task-board-column h3{
+      text-align: center; /* horizontally center text */
+    }
   `
 })
 export class TaskBoard {
