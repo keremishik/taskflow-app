@@ -9,7 +9,9 @@ import { TaskBoard } from "../components/task-board/task-board";
   template: `
     <div class="app-container">
       <p>App Component</p>
-      <app-header></app-header>
+      <div class="header-container">
+        <app-header></app-header>
+      </div>
       <div class="main-layout">
         <app-sidebar></app-sidebar>
         <div class="content">
@@ -17,6 +19,25 @@ import { TaskBoard } from "../components/task-board/task-board";
         </div>
       </div>
     </div>
+  `,
+  styles: `
+    .app-container{
+      border: 0.2rem solid black;
+      border-radius: 0.5rem;
+    }
+    .header-container{
+      border: 0.2rem solid black;
+      border-radius: 0.1rem;
+    }
+    .main-layout{
+      border: 0.2rem solid black;
+      border-radius: 0.1rem;
+    }
+    .content{
+      border: 0.2rem solid black;
+      border-radius: 0.1rem;
+    }
+
   `
 })
 export class App {

@@ -1,3 +1,18 @@
 <header>
-  <p>Header Component</p>
+  <div class="header-left">
+    <p>TaskFlow</p>
+  </div>
+  <div class="header-right">
+    <p>Welcome, User!</p>
+    <div class="user-menu" [class.open]="isUserMenuOpen">
+      <button (click)="isUserMenuOpen = !isUserMenuOpen">⬇️</button>
+      @if (isUserMenuOpen) {
+        <div class="dropdown">
+          <a (click)="openProfile()">Profil</a>
+          <a (click)="openSettings()">Ayarlar</a>
+          <a (click)="logout()">Çıkış Yap</a>
+        </div>
+      }
+    </div>
+  </div>
 </header>
