@@ -8,17 +8,18 @@ import { TaskBoard } from "../components/task-board/task-board";
   imports: [Header, Sidebar, TaskBoard],
   template: `
     <div class="app-container">
-      <p>App Component</p>
       <div class="header-container">
         <app-header></app-header>
       </div>
       <div class="main-layout">
-        <app-sidebar></app-sidebar>
-        <div class="content">
+        <div class="sidebar-container">
+          <app-sidebar></app-sidebar>
+        </div>
+        <div class="task-board-container">
           <app-task-board></app-task-board>
         </div>
       </div>
-    </div>
+    </div>  
   `,
   styles: `
     .app-container{
@@ -30,10 +31,17 @@ import { TaskBoard } from "../components/task-board/task-board";
       border-radius: 0.1rem;
     }
     .main-layout{
+      display: flex; /* to makee sidebar and taskboard side by side <-> */
       border: 0.2rem solid black;
       border-radius: 0.1rem;
     }
-    .content{
+    .sidebar-container{
+      width: 20%;
+      border: 0.2rem solid black;
+      border-radius: 0.1rem;
+    }
+    .task-board-container{
+      width: 80%;
       border: 0.2rem solid black;
       border-radius: 0.1rem;
     }
