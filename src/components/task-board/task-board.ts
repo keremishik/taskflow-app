@@ -10,12 +10,14 @@ import { Task } from '../../services/task';
   styles: `
     .task-board-content{
       display: flex;
-      gap: 10rem;
-      justify-content: center; /* horizontal center */
-      align-items: center; /* vertical center */
+      gap: 2rem; /* gap between columns */
+      justify-content: center; /* horizontal center */  
+      height: 100%;
     }
     .task-board-column{
-      
+      border: 0.2rem solid black;
+      border-radius: 0.5rem;
+      width: 350px; /* columns width */
     }
   `
 })
