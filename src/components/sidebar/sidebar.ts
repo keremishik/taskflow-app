@@ -8,10 +8,12 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/
   changeDetection: ChangeDetectionStrategy.OnPush,
   styles: `
     .sidebar-content{
-      text-align: center; /* yazilari yatayda ortalar */
-      
+
     }
-  `
+    .sidebar-item h3{
+      text-align: center; /* horizontally center text */
+    }
+`
 })
 export class Sidebar {
 

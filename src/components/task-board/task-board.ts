@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, inject, ViewEncapsulation } from '@angular/core';
-import { Task } from '../../services/task';
+import { TaskService } from '../../services/task-service';
 
 @Component({
   selector: 'app-task-board',
@@ -22,10 +22,15 @@ import { Task } from '../../services/task';
     .task-board-column h3{
       text-align: center; /* horizontally center text */
     }
+
+    .task-card{
+      border: 0.2rem solid black;
+      border-radius: 0.5rem;
+    }
   `
 })
 export class TaskBoard {
   
-  task = inject(Task);
+  task = inject(TaskService);
 
 }
