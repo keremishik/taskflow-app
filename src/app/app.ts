@@ -28,22 +28,22 @@ import { TaskBoard } from "../components/task-board/task-board";
     }
     .header-container{
       border: 0.2rem solid black;
-      border-radius: 0.1rem;
+      border-radius: 0.5rem;
     }
     .main-layout{
       display: flex; /* to makee sidebar and taskboard side by side <-> */
       border: 0.2rem solid black;
-      border-radius: 0.1rem;
+      border-radius: 0.5rem;
     }
     .sidebar-container{
       width: 20%;
       border: 0.2rem solid black;
-      border-radius: 0.1rem;
+      border-radius: 0.5rem;
     }
     .task-board-container{
       width: 80%;
       border: 0.2rem solid black;
-      border-radius: 0.1rem;
+      border-radius: 0.5rem;
     }
 
   `
